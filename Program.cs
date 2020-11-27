@@ -64,13 +64,13 @@ namespace Sistema_de_produtos
                 }
             } while (choice != 0);
 
-            int validacaoPromocao;
+            int validacaoPromocao = 0;
 
             if(validacaoPromocao >= 10 ){
-                validacaoPromocao = AnalisarPromocao(promocao);
+                validacaoPromocao = AnalisarPromocao(promocao[i]);
             }
             else{
-                validacaoPromocao = AnalisarPromocao(promocao);
+                validacaoPromocao = AnalisarPromocao(promocao[i]);
             }
          
          bool AnalisarPromocao (bool promocao){
